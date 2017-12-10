@@ -1,0 +1,20 @@
+HP 13-ad001#Intel Core i5#/hp.jpg#19000.0#23#Notebooks
+Apple iPad Pro 10.5#Space Gray 64gb#/ipadpro105.jpg#23000.0#45#Tablets
+Apple iPad#Silver 32gb #/ipad2017.jpg#9500.0#60#Tablets
+Samsung Galaxy Note 8#Color negro 64gb#/note8.jpg#24000.0#4#Celulares
+Beats Solo 3#Rose Gold Wireless#/solo3.jpg#6000.0#12#Auriculares
+Apple iPhone 8 Plus#Color silver 64gb#/iphone8plus.jpg#23000.0#25#Celulares
+Huawei Mediapad T3#7 pulgadas. Negro.#/huaweitablet.jpg#2000.0#15#Tablets
+Samsung Gear 360#Color blanco#/samsunggear.jpg#10000.0#31#Camaras
+GoPro Hero 6#Black. 4K#/goprohero.jpg#15500.0#46#Camaras
+Philips 43PFG510277#Smart TV. 43 pulgadas.#/philips43.jpg#9999.0#58#Televisores
+Apple iPhone X#Color silver 64gb#/iphonex.jpeg#31500.0#10#Celulares
+Apple iPhone 8#Color silver 64gb#/iphone8.png#20000.0#15#Celulares
+BGH BLE3917RT#SMART TV. 39 pulgadas. #/bgh39.jpg#8499.0#35#Televisores
+Apple Airpods#Blancos#/airpods.jpg#4000.0#50#Auriculares
+Philips SHL3060PP/00#Violeta#/auriphilips.jpg#479.0#20#Auriculares
+LG 60UJ6580#Smart TV 4K#/lg60.jpg#44999.0#19#Televisores
+Nikon D3400#Reflex 24mpx#/nikond3400.jpg#12490.0#14#Camaras
+Exo E15#14 Pulgadas, Intel Atom#/exoe15.png#4899.0#9#Notebooks
+Canon T6#Reflex. 18mpx#/canont6.jpg#13000.0#20#Camaras
+Philips 32PHG510277#Smart TV 32 pulgadas. #/philips32.jpg#6499.0#15#Televisores
