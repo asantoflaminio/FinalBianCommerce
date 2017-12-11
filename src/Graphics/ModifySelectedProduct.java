@@ -16,6 +16,8 @@ import java.awt.Font;
 import javax.swing.JTextPane;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 
 public class ModifySelectedProduct extends JFrame {
 
@@ -40,7 +42,16 @@ public class ModifySelectedProduct extends JFrame {
 		btnEliminarProducto.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				Window.users.remove(p);
+				Window.products.remove(p);
+				try {
+					Window.writeProducts();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (UnsupportedEncodingException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				JOptionPane.showMessageDialog(new JFrame(), "Producto eliminado", "Eliminado", JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false);
 				dispose();
