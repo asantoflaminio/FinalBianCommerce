@@ -191,7 +191,13 @@ public class CardMethod extends JFrame {
 					String securityCode = textField_2.getText();
 					String personName = textField_3.getText();
 					String cardType = "tarjeta";
-					String last4 = cardNumber.substring(cardNumber.length() - 4);
+					String last4;
+					if(cardNumber.length() >= 4) {
+						last4 = cardNumber.substring(cardNumber.length() - 4);
+					}else {
+						last4 = "XXXX";
+					}
+					
 					
 					if (rdbtnVisa.isSelected() == true) cardType = "VISA";
 					 if (rdbtnMastercard.isSelected() == true) cardType = "MASTERCARD";
@@ -201,7 +207,7 @@ public class CardMethod extends JFrame {
 						JOptionPane.showMessageDialog(new JFrame(), "Numero de tarjeta invalido", "Error", JOptionPane.ERROR_MESSAGE);
 					}else if(!expiry.matches("[0-9]{2}/[0-9]{2}") ) {
 						JOptionPane.showMessageDialog(new JFrame(), "Fecha invalida", "Error", JOptionPane.ERROR_MESSAGE);
-					}else if(!securityCode.matches("[0-9]{3}")) {
+					}else if(!rdbtnAmericanExpress.isSelected() && !securityCode.matches("[0-9]{3}") || (rdbtnAmericanExpress.isSelected() && !securityCode.matches("[0-9]{4}"))) {
 						JOptionPane.showMessageDialog(new JFrame(), "Codigo de seguridad invalido", "Error", JOptionPane.ERROR_MESSAGE);
 					}else if(!personName.matches("[a-zA-Z ]+")) {
 						JOptionPane.showMessageDialog(new JFrame(), "Error en el nombre del titular", "Error", JOptionPane.ERROR_MESSAGE);

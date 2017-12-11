@@ -21,6 +21,7 @@ import javax.swing.AbstractListModel;
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
 import javax.swing.JSpinner;
+import javax.swing.JSpinner.DefaultEditor;
 import javax.swing.SpinnerListModel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -276,7 +277,9 @@ public class CreateUser extends JFrame {
 		JSpinner spinner = new JSpinner();
 		spinner.setModel(new SpinnerListModel(new String[] {"Fijo", "Celular"}));
 		spinner.setBounds(510, 278, 128, 35);
+		((DefaultEditor) spinner.getEditor()).getTextField().setEditable(false);
 		contentPane.add(spinner);
+		
 	}
 	
 	protected boolean userFound(String mail) {
